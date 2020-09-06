@@ -31,8 +31,8 @@
 	<!-- Social -->
 	<meta property="og:title" content="Гривня Тудей" />
 	<meta property="og:site_name" content="Гривня Тудей" />
-	<meta property="og:image" content="http://hryvna.today/img/preview.png" />
-	<meta property="og:url" content="http://hryvna.today" />
+	<meta property="og:image" content="https://hryvna.today/img/preview.png" />
+	<meta property="og:url" content="https://hryvna.today" />
 	<meta property="og:see_also" content="http://dontgiveafish.com" />
 
 </head>
@@ -201,7 +201,7 @@
 					<div class="banks-graphics" ></div>
 				</div>
 				<!-- bay-sale -->
-				<table class="table-bay-sale tablesorter">
+				<table class="table-bay-sale">
 					<thead>
 						<tr>
 							<th><span class="title-sort double-title-sort">Банки</span></th>
@@ -213,7 +213,7 @@
 					<tbody></tbody>
 				</table>
 				<!-- bay-sale end -->
-				<a href="" class="btn-light show-more-banks">Показати більше банків</a>
+				<a href="" class="btn-light show-more-banks" id="show-more-banks">Показати більше банків</a>
 				<div class="scroll-link scroll-link-banks"><a href="#banks">sdf</a></div>
 			</div>
 		</section>
@@ -285,7 +285,7 @@
 <footer class="footer" role="contentinfo">
 	<div class="footer-inner">
 		<div class="container">
-			<p class="copyright">Гривня Тудей  &#169; 2015</p>
+			<p class="copyright">Гривня Тудей  &#169; {{$current_year}}</p>
 			<div class="studio">Зроблено в <a href="http://dontgiveafish.com">Don’t give a fish</a></div>
 		</div>
 	</div>
@@ -338,7 +338,7 @@
 		<div class="popup-content">
 			<div class="scroll-pane">
 				<div class="scroll-inner">
-					<table class="table-currency-converter tablesorter">
+					<table class="table-currency-converter">
 						<thead>
 							<tr>
 								<th>
@@ -386,7 +386,7 @@
 
 <!-- SCRIPT LINKS -->
 <!-- Jquery library -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- Addthis -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-551c75cb498bb202" async="async"></script>
 <!-- UI -->
@@ -394,7 +394,7 @@
 <!-- Widgets -->
 <script src="js/widgets.js"></script>
 <!-- Main functions -->
-<script src="js/functions.js?v4"></script>
+<script src="js/functions.js?v6"></script>
 <!-- Data -->
 <script src="js/data.js?{{$today->getTimestamp()}}"></script>
 
@@ -416,8 +416,6 @@ hm.src = ('++u-heatmap-it+log-js').replace(/[+]/g,'/').replace(/-/g,'.');
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(hm, s);
 })();
 </script>
-<!-- Hello .io -->
-<script src="https://cdn.onthe.io/io.js?DOojDJ6gL1Es"></script>
 {{/if}}
 
 

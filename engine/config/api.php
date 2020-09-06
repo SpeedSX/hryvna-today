@@ -15,7 +15,6 @@ $config = [
             'class' => 'yii\caching\FileCache',
         ],
         'user' => [
-            'identityClass' => 'app\models\api\Key',
             'enableSession' => false,
         ],
         'errorHandler' => [
@@ -38,6 +37,7 @@ $config = [
             ],
         ],
         'db' => require(__DIR__ . '/db.php'),
+        'monolog' => require(__DIR__ . '/monolog.php'),
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
